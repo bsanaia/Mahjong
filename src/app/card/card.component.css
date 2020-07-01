@@ -1,0 +1,30 @@
+.cell {
+  width: 48px;
+  height: 64px;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 7px 1px rgba(156, 200, 255, 0.75);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cell:hover {
+  box-shadow: 0 0 7px 1px rgba(113, 176, 255, 0.75);
+  transition:  0.3s ease-in-out;
+}
+
+.cell:active {
+  box-shadow: 0 0 7px 1px rgba(35, 142, 255, 0.75);
+}
+
+.box-shadow-dark {
+  box-shadow: 0 0 7px 1px rgba(35, 142, 255, 0.75);
+}
+
+.cell:not(:hover){
+  transition:  0.1s ease-in-out;
+}

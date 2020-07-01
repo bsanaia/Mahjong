@@ -1,0 +1,6 @@
+<div class="wrapper">
+  <app-card *ngFor="let n of randomNumbersInState; let idx = index"
+            [number]="n"
+            (cardClicked)="showNumber(idx)"></app-card>
+</div>
+

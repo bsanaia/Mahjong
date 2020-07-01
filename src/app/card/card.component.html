@@ -1,0 +1,8 @@
+<div [ngClass]="{'box-shadow-dark': number.show || number.selected === 'yet' || number.selected === 'always'}"
+     class="cell"
+     (click)="onCardClick()">
+  <span
+        [@fade]
+        *ngIf="number.show || number.selected === 'yet' || number.selected === 'always'"
+        class="number">{{number.number}}</span>
+</div>
